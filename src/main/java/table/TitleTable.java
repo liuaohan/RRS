@@ -34,7 +34,7 @@ public class TitleTable {
                 read().
                 schema(structType).
                 option("header", "true").
-                csv("E:\\IMDB\\test_files\\test_files_open_source\\imdb_data_csv\\title.csv").
+                csv("D:\\SparkResource\\dataset\\title.csv").
                 as(encoder);
         ds.createOrReplaceTempView("title");
         return ds;

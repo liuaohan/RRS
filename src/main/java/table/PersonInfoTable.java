@@ -35,7 +35,7 @@ public class PersonInfoTable {
                 read().
                 schema(structType).
                 option("header", "true").
-                csv("E:\\IMDB\\test_files\\test_files_open_source\\imdb_data_csv\\person_info.csv").
+                csv("D:\\SparkResource\\dataset\\person_info.csv").
                 as(encoder);
         ds.createOrReplaceTempView("person_info");
         return ds;

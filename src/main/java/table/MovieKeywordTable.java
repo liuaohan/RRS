@@ -34,7 +34,7 @@ public class MovieKeywordTable {
                 read().
                 schema(structType).
                 option("header", "true").
-                csv("E:\\IMDB\\test_files\\test_files_open_source\\imdb_data_csv\\movie_keyword.csv").
+                csv("D:\\SparkResource\\dataset\\movie_keyword.csv").
                 as(encoder);
         ds.createOrReplaceTempView("movie_keyword");
         return ds;

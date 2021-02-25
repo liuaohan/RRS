@@ -1,15 +1,23 @@
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
 public class spark {
-    public static void main(String[] args) {
-        Main.session.sql("SELECT \" +\n" +
-                "                \"COUNT(*) \" +\n" +
-                "                \"FROM \" +\n" +
-                "                \"movie_companies mc,\" +\n" +
-                "                \"title t,\" +\n" +
-                "                \"movie_info_idx mi_idx \" +\n" +
-                "                \"WHERE \" +\n" +
-                "                \"t.id=mc.movie_id \" +\n" +
-                "                \"AND t.id=mi_idx.movie_id \" +\n" +
-                "                \"AND mi_idx.info_type_id=112 \" +\n" +
-                "                \"AND mc.company_type_id=2\";");
+    public static void main(String[] args) throws IOException {
+        long pre = System.currentTimeMillis();
+        long now = System.currentTimeMillis();
+
+        File f = new File("/home/ubuntu/logs/physicplan.txt");
+        FileWriter fw = new FileWriter(f, true); // true,进行追加写。
+
+        PrintWriter pw = new PrintWriter(fw);
+        pw.println(now - pre);
+        pw.println(54655465);
+        pw.println("asdasdasd");
+        pw.flush();
+        //pw.close();
+        System.out.println(now - pre);
     }
 }

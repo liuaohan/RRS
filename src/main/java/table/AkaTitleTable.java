@@ -35,7 +35,7 @@ public class AkaTitleTable {
                 read().
                 schema(structType).
                 option("header", "true").
-                csv("E:\\IMDB\\test_files\\test_files_open_source\\imdb_data_csv\\aka_title.csv").
+                csv("D:\\SparkResource\\dataset\\aka_title.csv").
                 as(encoder);
         ds.createOrReplaceTempView("aka_title");
         return ds;

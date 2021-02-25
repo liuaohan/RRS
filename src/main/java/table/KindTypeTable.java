@@ -35,8 +35,9 @@ public class KindTypeTable {
                 read().
                 schema(structType).
                 option("header", "true").
-                csv("E:\\IMDB\\test_files\\test_files_open_source\\imdb_data_csv\\kind_type.csv").
+                csv("D:\\SparkResource\\dataset\\kind_type.csv").
                 as(encoder);
+        ds.createOrReplaceTempView("kind_type");
         return ds;
     }
 }

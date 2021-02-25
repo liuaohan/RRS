@@ -34,7 +34,7 @@ public class CompanyNameTable {
                 read().
                 schema(structType).
                 option("header", "true").
-                csv("E:\\IMDB\\test_files\\test_files_open_source\\imdb_data_csv\\company_name.csv").
+                csv("D:\\SparkResource\\dataset\\company_name.csv").
                 as(encoder);
         ds.createOrReplaceTempView("company_name");
         return ds;

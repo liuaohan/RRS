@@ -35,7 +35,7 @@ public class MovieCompaniesTable {
                 read().
                 schema(structType).
                 option("header", "true").
-                csv("E:\\IMDB\\test_files\\test_files_open_source\\imdb_data_csv\\movie_companies.csv").
+                csv("D:\\SparkResource\\dataset\\movie_companies.csv").
                 as(encoder);
         ds.createOrReplaceTempView("movie_companies");
         return ds;

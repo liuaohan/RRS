@@ -34,7 +34,7 @@ public class CastInfoTable {
                 read().
                 schema(structType).
                 option("header", "true").
-                csv("E:\\IMDB\\test_files\\test_files_open_source\\imdb_data_csv\\cast_info.csv").
+                csv("D:\\SparkResource\\dataset\\cast_info.csv").
                 as(encoder);
         ds.createOrReplaceTempView("cast_info");
         return ds;

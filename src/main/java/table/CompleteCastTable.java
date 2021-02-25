@@ -34,7 +34,7 @@ public class CompleteCastTable {
                 read().
                 schema(structType).
                 option("header", "true").
-                csv("E:\\IMDB\\test_files\\test_files_open_source\\imdb_data_csv\\complete_cast.csv").
+                csv("D:\\SparkResource\\dataset\\complete_cast.csv").
                 as(encoder);
         ds.createOrReplaceTempView("complete_cast");
         return ds;

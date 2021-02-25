@@ -34,7 +34,7 @@ public class InfoTypeTable {
                 read().
                 schema(structType).
                 option("header", "true").
-                csv("E:\\IMDB\\test_files\\test_files_open_source\\imdb_data_csv\\info_type.csv").
+                csv("D:\\SparkResource\\dataset\\info_type.csv").
                 as(encoder);
         ds.createOrReplaceTempView("info_type");
         return ds;

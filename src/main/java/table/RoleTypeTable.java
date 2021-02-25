@@ -35,7 +35,7 @@ public class RoleTypeTable {
                 read().
                 schema(structType).
                 option("header", "true").
-                csv("E:\\IMDB\\test_files\\test_files_open_source\\imdb_data_csv\\role_type.csv").
+                csv("D:\\SparkResource\\dataset\\role_type.csv").
                 as(encoder);
         ds.createOrReplaceTempView("role_type");
         return ds;

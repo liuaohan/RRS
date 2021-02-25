@@ -34,7 +34,7 @@ public class LinkTypeTable {
                 read().
                 schema(structType).
                 option("header", "true").
-                csv("E:\\IMDB\\test_files\\test_files_open_source\\imdb_data_csv\\link_type.csv").
+                csv("D:\\SparkResource\\dataset\\link_type.csv").
                 as(encoder);
         ds.createOrReplaceTempView("link_type");
         return ds;

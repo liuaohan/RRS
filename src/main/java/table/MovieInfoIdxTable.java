@@ -34,7 +34,7 @@ public class MovieInfoIdxTable {
                 read().
                 schema(structType).
                 option("header", "true").
-                csv("E:\\IMDB\\test_files\\test_files_open_source\\imdb_data_csv\\movie_info_idx.csv").
+                csv("D:\\SparkResource\\dataset\\movie_info_idx.csv").
                 as(encoder);
         ds.createOrReplaceTempView("movie_info_idx");
         return ds;

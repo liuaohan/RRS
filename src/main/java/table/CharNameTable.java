@@ -33,7 +33,7 @@ public class CharNameTable {
                 read().
                 schema(structType).
                 option("header", "true").
-                csv("E:\\IMDB\\test_files\\test_files_open_source\\imdb_data_csv\\char_name.csv").
+                csv("D:\\SparkResource\\dataset\\char_name.csv").
                 as(encoder);
         ds.createOrReplaceTempView("char_name");
         return ds;

@@ -34,7 +34,7 @@ public class KeywordTable {
                 read().
                 schema(structType).
                 option("header", "true").
-                csv("E:\\IMDB\\test_files\\test_files_open_source\\imdb_data_csv\\keyword.csv").
+                csv("D:\\SparkResource\\dataset\\keyword.csv").
                 as(encoder);
         ds.createOrReplaceTempView("keyword");
         return ds;
